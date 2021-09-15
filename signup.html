@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Signup</title>
+  </head>
+
+  <body>
+
+    <section class="singIn my-5">
+      <div class="containerElemnts w-50 mx-auto text-center p-5">
+        <h1 class="my-3">Smart Login System</h1>
+        <input type="text" class="form-control my-3" placeholder="Enter your name" id="name">
+        <input type="mail" class="form-control my-3" placeholder="Enter your email" id="email">
+        <p id="mailValid" class="d-none"><span class="text-danger m-3">You have entered an invalid email address!</span></p>
+        <input type="password" class="form-control my-3" placeholder="Enter your password " id="password">
+          <p id="passwordValid" class="d-none"><span class="text-danger m-3">You must enter at least 8 charcters</span></p>        
+        <button class="form-control btn btn-outline-info my-4 " disabled id="signup">Sign Up</button>
+          <p id="exist" class="d-none"><span class="text-success m-3">Success</span></p>
+          <p id="notExist" class="d-none"><span class="text-danger m-3">email already exists</span></p>
+          <p id="required" class="d-none"><span class="text-danger m-3">All inputs is required</span></p>
+          <p class="text-white ">You have an account? <a class="text-white" href="index.html">Signin</a></p>
+      </div>
+      
+    </section>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/signup.js"></script>
+  </body>
+</html>
